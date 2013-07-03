@@ -6,4 +6,6 @@
 
 한글 도메인을 비롯한 '국제화 도메인 네임'은 Punycode형식으로 IE7이상, Chrome, Firefox에서 별도의 프로그램없이 동작합니다.
 
-동작에 Facebook PHP SDK가 필요합니다.
+이 코드는 다음을 필요로합니다. 
+- Facebook PHP SDK (https://github.com/facebook/facebook-php-sdk)
+- phlyLabs' pure PHP IDNA Converter (http://idnaconv.phlymail.de/)
