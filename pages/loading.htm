@@ -1,0 +1,32 @@
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+	// init the FB JS SDK
+	FB.init({
+		appId		: '139433632759813',                        // App ID from the app dashboard
+		channelUrl	: '//xn--bf0bl47bpte.xn--3e0b707e/channel.html', // Channel file for x-domain comms
+		status		: true,                                 // Check Facebook Login status
+		xfbml		: true,                                  // Look for social plugins on the page
+		cookie		: true
+	});
+
+	// Additional initialization code such as adding Event Listeners goes here
+
+	FB.getLoginStatus(function(response) {
+		location.href="./";
+	});
+
+//	location.href="./";
+};
+
+// Load the SDK asynchronously
+(function(d, s, id){
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) {return;}
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+앱을 읽는 중입니다. 잠시만 기다려주세요.
+

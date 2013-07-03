@@ -1,0 +1,209 @@
+* {
+	font-family: "나눔고딕", "NanumGothic", "맑은 고딕", "Malgun Gothic", "Segoe UI", "Tahoma";
+	font-size: 16px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.canvas {
+	width: 100%;
+	min-width: 960px;
+}
+
+.head {
+	background-color: #3b5998;
+	height: 40px;
+	width: 100%;
+}
+
+.title_bar {
+	width: 960px;
+	height: 40px;
+	margin: 0px auto;
+}
+
+.title {
+	height: 40px;
+	width: 148px;
+	float: left;
+	background-image: url("/imgs/title.png");
+}
+
+.title_item{
+	color: #9bB9F8;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.title_item:hover {
+	background-color: #4b69A8;
+	color: #FFFFFF;
+}
+
+.title_item img{
+	border: 0px;
+}
+
+.title_item a {
+	color: #9bB9F8;
+	text-decoration: none;
+}
+
+.title_item a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+.login_box{
+	height: 40px;
+	min-width: 100px;
+	font-size: 16px;
+	float: right;
+	padding: 0px 10px;
+}
+
+.login{
+	height: 16px;
+	margin: 12px 0px;
+	vertical-align: middle;
+}
+
+.profile {
+	margin: 0px 5px;
+	height: 40px;
+	min-width: 100px;
+	float: right;
+	padding: 0px 10px;
+}
+
+.profile_option {
+	height: 40px;
+	width: 20px;
+	float: right;
+}
+
+.profile_option_btn {
+	margin: 15px 5px;
+	height: 10px;
+	width: 10px;
+	background-color: #000000;
+}
+
+.profile_img {
+	margin: 8px 5px 8px 0px;;
+	height: 23px;
+	width: 23px;
+	float: right;
+}
+
+.profile_name {
+	height: 16px;
+	margin: 12px 0px;
+	font-size: 16px;
+	float: right;
+}
+
+.fb_like_bar {
+	height: 29px;
+	width: 960px;
+	clear: both;
+	margin: 5px auto;
+}
+
+.fb_like{
+	clear: both;
+	width: 940px;
+	margin: 0px 10px;
+	height: 29px;
+}
+
+.content {
+	margin: 0px auto;
+	min-height: 300px;
+	width: 960px;
+	clear: both;
+	margin: 0px auto;
+}
+
+.content_box {
+	margin: 65px 150px;
+	min-height: 170px;
+	width: 600px;
+	clear: both;
+	border-top: solid 1px #AAAAAA;
+	border-right: solid 1px #AAAAAA;
+	border-left: solid 1px #666666;
+	border-bottom: solid 1px #666666;
+	padding: 10px;
+}
+
+.foot {
+	clear: both;
+	height: 50px;
+	width: 960px;
+	text-color: #333333;
+	margin: 0px auto;
+}
+
+.foot_copyright {
+	margin-left: 20px;
+	height: 50px;
+	width: 250px;
+	float: left;
+}
+
+.foot_info {
+	margin-right: 20px;
+	float: right;
+	text-align: right;
+	height: 50px;
+	width: 300px;
+}
+
+.button {
+	background-color: #808080;
+	text-align: center;
+	margin: 2px 2px;
+	font-size: 14px;
+	height: 16px;
+	width: 54px;
+	border: solid 1px #A0A0A0;
+	cursor: pointer;
+}
+
+.button_deco {
+	background-color: #808080;
+	text-align: center;
+	height: 22px;
+	width: 60px;
+	margin: 4px 5px 4px 0px;
+	border: solid 1px #000000;
+	float: left;
+	cursor: pointer;
+}
+
+.modify_box {
+	float: left;
+}
+
+.modify_input_box {
+	float: left;
+	margin: 2px 15px 2px 5px;;
+}
+
+#modify_box {
+	display: none;
+	width: 440px;
+	border: solid 1px #555555;
+	margin-right: 15px;
+	height: 30px;
+}
+
+#keyword {
+	width: 100px;
+}
+
