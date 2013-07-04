@@ -2,6 +2,13 @@
 
 $main_domain = "xn--bf0bl47bpte.xn--3e0b707e";
 
+// Bot 판별
+if(is_bot()){
+	header ('Content-type: text/html; charset=utf-8');
+	readfile("./pages/for_bot.htm");
+	exit;
+}
+
 // 얼굴책.한국 연결
 if($_SERVER['SERVER_NAME'] == $main_domain
 		|| $_SERVER['SERVER_NAME'] == "www." . $main_domain){
@@ -55,15 +62,9 @@ $result_url = $result_arr[0];
 
 
 if($result_url){
-	if(is_bot()){
-		header ('Content-type: text/html; charset=utf-8');
-		readfile("./pages/for_bot.htm");
-		exit;
-	} else {
-		$result = $result_url.$_SERVER['REQUEST_URI'];
-		showRedirectPage($result);
-		exit;
-	}
+	$result = $result_url.$_SERVER['REQUEST_URI'];
+	showRedirectPage($result);
+	exit;
 } else{
 	require_once("./pages/notexistdomain.php");
 	exit();
@@ -77,6 +78,9 @@ function is_bot(){
 		return true;
 
 	if(strpos($_SERVER["REMOTE_ADDR"], "74.125.126"))
+		return true;
+
+	if(strpos($_SERVER["HTTP_USER_AGENT"], "+https://developers.google.com/+/web/snippet/"))
 		return true;
 
 	return false;
