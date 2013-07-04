@@ -83,6 +83,12 @@ function is_bot(){
 	if(strpos($_SERVER["HTTP_USER_AGENT"], "+https://developers.google.com/+/web/snippet/"))
 		return true;
 
+	if(strpos($_SERVER["HTTP_USER_AGENT"], "Feedfetcher"))
+		return true;
+
+	if(strpos($_SERVER["HTTP_USER_AGENT"], "Daumoa"))
+		return true;
+
 	return false;
 }
 
